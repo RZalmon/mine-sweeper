@@ -1,0 +1,143 @@
+body {
+  background-image: url(../img/bcg-img.jpg);
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header{
+  font-family: fantasy;
+}
+
+.diffs-bar {
+  margin-bottom: 5px;
+}
+
+.diffs-bar button {
+  cursor: pointer;
+  background-color: silver;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  border-bottom: solid 2px #7b7b7b;
+  border-right: solid 2px #7b7b7b;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+}
+
+.diffs-bar :nth-child(2) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.game-data * {
+  display: inline;
+  font-family: fantasy;
+}
+
+.helpers * {
+  display: inline;
+}
+
+.flags-counter, .timer {
+  background-color: black;
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 2px;
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid grey;
+  background-color: rgb(190, 186, 186);
+  table-layout: fixed;
+  width: 250px;
+  height: 250px;
+  border-spacing: 0px;
+}
+
+.cell, .replay-btn {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: silver;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  border-bottom: solid 2px #7b7b7b;
+  border-right: solid 2px #7b7b7b;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+  transition: .3s;
+}
+
+.replay-btn {
+  cursor: pointer;
+  font-size: 27px;
+}
+
+td:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+td.revealed {
+  border: 2px grey solid;
+  height: 25px;
+  width: 25px;
+  cursor: default;
+  background-color: rgba(173, 144, 144, 0.6);
+  color: white;
+}
+
+.hints-bar *, .flags-bar * {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.hinted {
+  background-color: yellow;
+}
+
+.lives-modal, .record-modal {
+  height: 22px;
+  width: 127px;
+  background-color: black;
+  color: red;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: fantasy;
+  padding: 2px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.live-lost {
+  background-color: red;
+  color: white;
+}
+
+.safe-clicks {
+  background-color: #334954;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+}
+
+.undo-btn {
+  height: 22px;
+  width: 120px;
+  background-color: #3a7e95;
+  font-size: 14px;
+  font-weight: bold;
+}

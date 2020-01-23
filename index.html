@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mine Field</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body onload="init(1)">
+  <header>
+    <h1>Mine Sweeper</h1>
+  </header>
+  <div class="diffs-bar"><button onclick="init(0)">EASY🐣</button><button onclick="init(1)">MEDIUM🐤</button><button
+      onclick="init(2)">HARD🐓</button></div>
+  <div class="game-data">
+    <div class="flags-counter">00<span>00</span></div>
+    <div class="replay-btn" onclick="playAgain()">😃</div>
+    <div class="timer">00:00</div>
+  </div>
+  <div class="record-modal">RECORD-<span class="record"></span></div>
+  <div class="board-container"></div>
+  <div class="helpers">
+    <button class="undo-btn" onclick="undo()" >UNDO🕜(soon)</button>
+    <div class="flags-bar"></div>
+    <div class="lives-modal"></div>
+    <div class="hints-bar"></div>
+    <button class="safe-clicks" onclick="safeClick(gBoard)" >SAFE CLICKS(<span></span>)🐀</button>
+  </div>
+  <script src="js/util.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
