@@ -90,6 +90,9 @@ function renderCell(location, value) {
 }
 
 function nullifyLocalStorage(){
+    localStorage.setItem(0, 99999);
+    localStorage.setItem(1, 99999);
+    localStorage.setItem(2, 99999);
     localStorage.removeItem('easy');
     localStorage.removeItem('medium');
     localStorage.removeItem('hard');
