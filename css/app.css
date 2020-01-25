@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/bcg-img.jpg);
+  background-image: url(../img/light.jpg);
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,8 +63,8 @@ table {
 }
 
 .cell, .replay-btn {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   text-align: center;
   background-color: silver;
   font-weight: bold;
@@ -91,8 +91,8 @@ td:hover {
 
 td.revealed {
   border: 2px grey solid;
-  height: 25px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
   cursor: default;
   background-color: rgba(173, 144, 144, 0.6);
   color: white;
@@ -140,4 +140,20 @@ td.revealed {
   background-color: #3a7e95;
   font-size: 14px;
   font-weight: bold;
+}
+
+.dark-btn{
+  border-bottom: solid 2px #7b7b7b;
+  border-right: solid 2px #7b7b7b;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+}
+
+.dark {
+  border-bottom: solid 2px #7b7b7b;
+  border-right: solid 2px #7b7b7b;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+  background-color: #474747;
+  color: white;
 }

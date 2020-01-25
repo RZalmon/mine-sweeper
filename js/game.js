@@ -4,7 +4,7 @@ var FLAG = '🚩';
 var RIGHT = '✅';
 var WRONG = '❌';
 var EXPLOSION = '💥';
-var gEmojis = ['💀', '😱', '😫', '😦', '😃', '😨', '😎'];
+var gEmojis = ['💀', '😱', '😫', '😐', '😃', '😨', '😎'];
 var HINT = '💡';
 var SAFEMOUSE = '🐀';
 var gFlagSound = new Audio('audio/flag.wav');
@@ -40,6 +40,7 @@ function init(diffIdx) {
     isRecord: false,
     safeClicks: 3,
     movesPlayed: 0,
+    darkMode: false,
   };
   gGames = [];
   gBoards = [];
@@ -469,7 +470,25 @@ function undo() {
   elContainer.innerHTML = strHTML;
 }
 
-
+function darkMode() {
+  gGame.darkMode = !gGame.darkMode;
+  var elDarkBtn = document.querySelector('.dark-btn')
+  if (gGame.darkMode) {
+    elDarkBtn.style.backgroundColor = '#474747';
+    elDarkBtn.innerText = 'LIGHT MODE'
+    elDarkBtn.style.color = 'white';
+    document.body.style.backgroundImage = "url('img/dark.jpg')";
+  } else {                                                             
+    elDarkBtn.style.backgroundColor = 'silver';
+    elDarkBtn.innerText = 'DARK MODE'
+    elDarkBtn.style.color = 'black';
+    document.body.style.backgroundImage = "url('img/light.jpg')";
+  }
+  var elCells = document.querySelectorAll('.cell');
+  for (var i = 0; i < elCells.length; i++) {
+    elCells[i].classList.toggle('dark');
+  }
+}
 
 function cellClicked(elCell, eve, board, i, j) {
   eve.preventDefault();
