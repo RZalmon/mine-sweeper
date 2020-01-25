@@ -292,6 +292,7 @@ function hintClicked(elHint) {
   if (!gGame.isOn) return;
   gGame.hintOn = true;
   elHint.style.visibility = 'hidden';
+  document.querySelector('.replay-btn').innerText = HINT;
 }
 
 
@@ -307,6 +308,7 @@ function removeHint(board, i, j) {
         renderCell({ i: coordI, j: coordJ }, '');
         var elCell = document.querySelector(`.cell.cell${coordI}-${coordJ}`);
         elCell.classList.remove('hinted');
+        document.querySelector('.replay-btn').innerText = gEmojis[gGame.livesLeft + 1];
       }
     }
   }

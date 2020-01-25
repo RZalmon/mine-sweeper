@@ -147,6 +147,7 @@ td.revealed {
   border-right: solid 2px #7b7b7b;
   border-top: solid 2px #fff;
   border-left: solid 2px #fff;
+  margin-bottom: 2px;
 }
 
 .dark {
